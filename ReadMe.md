@@ -1,2 +1,12 @@
-- [React](react/ReadMe.md)
+- Frontend
+  - [React](Frontend//React.md)
+- Backend
+  - [Python](Backend/python.md)
+  - [Django](Backend/django.md)
+- Databases
+  - [SQL](Databases/sql.md)
+  - [DBMS](Databases/dbms.md)
+- Software Engineering
+  - [Design Pattern](Software%20Engineering/design-pattern.md)
+  - [Micro Services](Software%20Engineering/microservices.md) 
 - [Code Challenges](code-challenges/ReadMe.md)
