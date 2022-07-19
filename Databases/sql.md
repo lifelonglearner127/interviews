@@ -3,6 +3,11 @@
 - [What is a Foreign Key?](#what-is-a-foreign-key)
 - [What is a Join? List its different types.](#what-is-a-join-list-its-different-types)
 - [What is a Self-Join?](#what-is-a-self-join)
+- [What is a Cross-Join?](#what-is-a-cross-join)
+- [What is an Index? Explain its different types.](#what-is-an-index-explain-its-different-types)
+- [What is the difference between Clustered and Non-clustered index?](#what-is-the-difference-between-clustered-and-non-clustered-index)
+- [What is Data Integrity?](#what-is-data-integrity)
+- [What is a Query?](#what-is-a-query)
 
 ### What is a Primary Key?
 The PRIMARY KEY constraint uniquely identifies each row in a table.
@@ -29,3 +34,9 @@ The SQL Join clause is used to combine records (rows) from two or more tables in
 ### What is a Self-Join?
 A self JOIN is a case of regular join where a table is joined to itself based on some relation between its own column(s).
 Self-join uses the INNER JOIN or LEFT JOIN clause and a table alias is used to assign different names to the table within the query.
+
+### What is a Cross-Join?
+### What is an Index? Explain its different types.
+### What is the difference between Clustered and Non-clustered index?
+### What is Data Integrity?
+### What is a Query?
