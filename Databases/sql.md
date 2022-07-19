@@ -36,7 +36,15 @@ A self JOIN is a case of regular join where a table is joined to itself based on
 Self-join uses the INNER JOIN or LEFT JOIN clause and a table alias is used to assign different names to the table within the query.
 
 ### What is a Cross-Join?
+Cross-Join can be defined as a cartesian product of the two tables included in the join.
+The table after join contains the same number of rows as in the cross-product of the number of rows in the two tables.
+
 ### What is an Index? Explain its different types.
+A database index is a data structure that improves the speed of data retrieval operations on a database table at the cost of additional writes and spaces to maintain the index data structure. 
+
+**Unique and non-unique Index**
+
+
 ### What is the difference between Clustered and Non-clustered index?
 ### What is Data Integrity?
 ### What is a Query?

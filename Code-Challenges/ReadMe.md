@@ -1,5 +1,6 @@
 ### Array
 - [Largest Sum Contiguous Subarray](array/largest-sum-contiguous-subarray.md)
+- [Missing Number](array/missing_number.md)
 - [Trapping Rain Water](array/trapping-rain-water.md)
 - 
 
