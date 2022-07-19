@@ -8,13 +8,13 @@
 - [About Virtual DOM](#about-virtual-dom)
 - [Differences between controlled and uncontrolled components](#about-virtual-dom)
 - [Explain React state and props](#explain-react-state-and-props)
-- [Explain about types of side effects in React Component](#)
-- [What is prop drilling in React?](#)
-- [What are error boundaries?](#)
-- [Explain React Hooks?](#)
-- [What is the use of useEffect React Hooks?](#)
-- [Why do React Hooks make use of refs?](#)
-- [What are Custom Hooks](#)
+- [Explain about types of side effects in React Component](#explain-about-types-of-side-effects-in-react-component)
+- [What is prop drilling in React?](#what-is-prop-drilling-in-react)
+- [What are error boundaries?](#what-are-error-boundaries)
+- [Explain React Hooks?](#explain-react-hooks)
+- [What is the use of useEffect React Hooks?](#what-is-the-use-of-useeffect-react-hooks)
+- [Why do React Hooks make use of refs?](#why-do-react-hooks-make-use-of-refs)
+- [What are Custom Hooks](#what-are-custom-hooks)
 - [Explain Strict Mode in React](#)
 - [How to prevent re-renders in React?](#)
 - [What are the different ways to style a React component?](#)
@@ -116,3 +116,22 @@ For every DOM object, there is a corresponding Virtual DOM object, which has the
 - Props Has better performance than state. 
 - State object is owned by the component, locally scoped.
 - Changes to state can be asynchronous.
+
+### Explain about types of side effects in React Component
+There are 2 types of side effects in React component.
+
+**Effects without Cleanup**: Network requests, manual DOM mutations, and logging are common examples of effects that don’t require a cleanup.
+
+**Effects with Cleanup**:
+
+### What is prop drilling in React?
+
+### What are error boundaries?
+
+### Explain React Hooks?
+
+### What is the use of useEffect React Hooks?
+
+### Why do React Hooks make use of refs?
+
+### What are Custom Hooks
