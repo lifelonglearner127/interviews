@@ -1,6 +1,7 @@
 - [Ahead-of-time compilation](#ahead-of-time-compilation)
 - [Just-in-time compilation](#just-in-time-compilation)
 - [Pure function](#pure-function)
+- [REST API](#rest-api)
 
 ### Ahead-of-time compilation
 In computer science, ahead-of-time compilation (AOT compilation) is the act of compiling an (often) higher-level programming language into an (often) lower-level language before execution of a program, usually at build-time, to reduce the amount of work needed to be performed at run time.
@@ -16,3 +17,16 @@ A system implementing a JIT compiler typically continuously analyses the code be
 In computer programming, a pure function is a function that has the following properties.
 -	The function return values that are identical for identical arguments
 -	The function application has no side effects (no mutation of local static variables, non-local variables, mutable reference arguments or input/output streams)
+
+## REST API
+A REST API is an application programming interface that conforms to the constraints of REST architectural style and allows for interaction with RESTful web services. REST stands for representational state transfer.
+REST is a set of architectural constraints, not a protocol or a standard. When a client request is made via a RESTful API, it transfers a representation of the state of the resource to the requester or endpoint. This information, or representation, is delivered in one of several formats via HTTP: JSON, HTML, XLT, or plain text. JSON is the most generally popular file format to use because it's language-agnostic.
+Something else to keep in mind: Headers and parameters are also important in the HTTP methods of a RESTful API, as they contain important identifier information as to the request's metadata, authorization, uniform resource identifier(URI), caching, cookies and more. There are request headers and response headers, each with their own HTTP connection information and status codes.
+
+In order for an API to be considered RESTful, it has to confirm to these criteria:
+- `Client-server architecture`: The client-server design pattern enforces the principle of `separation of concerns`: separating the user interface concenrs from data storage concerns.
+- `Statelessness`: In computing, a stateless protocol is a communication protocol in which no session information is retained by the receiver, usually a server. No client information is stored between get requests and each request is separate and unconnected.
+- `Cacheability`: As on the World Wide Web, clients and intermediaries can cache responses. Responses must define themselves as either cacheable or non-cacheable. Well-managed caching partially or completely eliminates some client-server interactionis, further improving scalability and performance.
+- `Layered system`: A layered system is a system in which components are grouped in a hierarchical arragement, such that lower layers provide functions and services that support the functions and servies of higher layers. If a proxy or load balancer is placed between the client and server, it won't affect their communications, and there won't be a need to update the client or server code.
+- `Uniform interface`: A uniform interface between components so that information is transferred in a standardized form instead of specific to an application's needs.
+- `Code on demand`: the ability to send exectuable code from the server to the client when requested, extending client functionality.

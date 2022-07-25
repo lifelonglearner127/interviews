@@ -15,13 +15,13 @@ Solutions:
 ```python
 def find_solution(l):
     max_sum = 0
-    non_negative_sum = 0
+    current_sum = 0
     for i in l:
-        non_negative_sum += i
-        if non_negative_sum > max_sum:
-            max_sum = non_negative_sum
-        if non_negative_sum < 0:
-            non_negative_sum = 0
+        current_sum += i
+        if current_sum > max_sum:
+            max_sum = current_sum
+        if current_sum < 0:
+            current_sum = 0
     return max_sum
 
 
