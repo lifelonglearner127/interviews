@@ -43,8 +43,23 @@ The table after join contains the same number of rows as in the cross-product of
 A database index is a data structure that improves the speed of data retrieval operations on a database table at the cost of additional writes and spaces to maintain the index data structure. 
 
 **Unique and non-unique Index**
+Unique indexes are indexes that help maintain data integrity by ensuring that no two rows of data in a table have identical key values. Once a unique index has been defined for a table, uniqueness is enforced whenever keys are added or changed within the index.
 
+**Clustered and non-clustered Index**
+Clustered indexes are indexes whose order of the rows in the database corresponds to the order of the rows in the index. This is why only on clustered index can exist in a given table, whereas, multiple non-clustered indexes can exist in the table.
 
 ### What is the difference between Clustered and Non-clustered index?
+- `Clustered` index modifies the way records are stored in a database based on the indexed column. A `non-clustered` index creates a separate entity within the table which references the original table.
+- `Clustered` index is used for easy and speedy retrieval of data from the database, whereas, fetching records from the non-clustered index is relatively slower.
+- In SQL, a table can have a single `clustered` index whereas it can have multiple `non-clustered` indexes.
+
 ### What is Data Integrity?
+Data integrity is the assurance of accuracy and consistency of data over its entire life-cycle and is a critical aspect of the design, implementation, and usage of any system which stores, processes, or retrieves data. It also defines integrity constraints to enforce business rules on the data when it is entered into an application or a database.
+
 ### What is a Query?
+A query is a request for data or information from a database table or combination of tables. A database query can be either a select query or an actioin query.
+
+### What is a Subquery? What are its types?
+A subquery is a query within another query, also known as a nested query or inner query. It is used to restrict or enhance the data to be queried by the main query. thus restricting or enhancing the output of the main query respectively. There are 2 types of subquery - `Correlated` and `Non-Correlated`.
+- A `correlated` subquery cannot be considered as an independent query, but it can refer to the column in a table listed in the `FROM` of the main query.
+- A `non-correlated` subquery can be considered as an independent query and the output of the subquery is substituted in the main query.
