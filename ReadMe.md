@@ -1,12 +1,17 @@
 - Frontend
-  - [React](Frontend//React.md)
+  - [Javascript](Frontend/javascript.md)
+  - [React](Frontend/React.md)
+  - [Next.js](Frontend/nextjs.md)
 - Backend
   - [Python](Backend/python.md)
   - [Django](Backend/django.md)
+- Cloud
+  - [AWS](Cloud/aws.md)
 - Databases
   - [SQL](Databases/sql.md)
   - [DBMS](Databases/dbms.md)
 - Software Engineering
+  - [General](Software%20Engineering/general.md)
   - [Design Pattern](Software%20Engineering/design-pattern.md)
   - [Micro Services](Software%20Engineering/microservices.md) 
 - [Code Challenges](code-challenges/ReadMe.md)
