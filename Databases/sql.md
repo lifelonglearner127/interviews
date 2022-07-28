@@ -8,6 +8,8 @@
 - [What is the difference between Clustered and Non-clustered index?](#what-is-the-difference-between-clustered-and-non-clustered-index)
 - [What is Data Integrity?](#what-is-data-integrity)
 - [What is a Query?](#what-is-a-query)
+- [What is a Subquery? What are its types?](#what-is-a-subquery-what-are-its-types)
+- [What is View and Materialized View? Difference between them](#what-is-view-and-materialized-view-difference-between-them)
 
 ### What is a Primary Key?
 The PRIMARY KEY constraint uniquely identifies each row in a table.
@@ -63,3 +65,27 @@ A query is a request for data or information from a database table or combinatio
 A subquery is a query within another query, also known as a nested query or inner query. It is used to restrict or enhance the data to be queried by the main query. thus restricting or enhancing the output of the main query respectively. There are 2 types of subquery - `Correlated` and `Non-Correlated`.
 - A `correlated` subquery cannot be considered as an independent query, but it can refer to the column in a table listed in the `FROM` of the main query.
 - A `non-correlated` subquery can be considered as an independent query and the output of the subquery is substituted in the main query.
+
+
+### What is View and Materialized View? Difference between them
+In SQL, a `view` is a virtual table based on the result-set of an SQL statement. A view contains rows and columns, just like a real table. The fields in a view are fields from one or more real tables in the database.
+
+A `materialized view` is a view whose contents are computed and stored. Materialized view is also a logical virtual table, but in this case the result of the query is stored in the table or the disk. The performance of the materialized view is better than normal view since the data is stored in the disk.
+
+Differences:
+
+- Storage:
+    - In Views the resulting tuples of the query expression is not get storing on the disk only the query expression is stored on the disk.	
+    - On other hand in case of Materialized views both query expression and resulting tuples of the query get stored on the disk.
+- Query Execution:
+    - As mentioned above in case of Views the query expression is stored on the disk and not its result so query expression get executed every time when user try to fetch data from it so that user will get the latest updated value every time.
+    - While on other hand in case of Materialized Views the result of query is get stored on the disk and hence the query expression did not get executed every time when user try to fetch the data so that user will not get the latest updated value if it get changed in database.
+- Cost Effective:
+    - As Views does not have any storage cost associated with it so they also does not have any update cost associated with it.
+    - On other hand Materialized Views does have a storage cost associated with it so also have update cost associated with it.
+- Design:
+    - Views in SQL are designed with a fixed architecture approach due to which there is an SQL standard of defining a view.
+    - On other hand in case of Materialized Views in SQL are designed with a generic architecture approach so there is no SQL standard for defining it,and its functionality is provided by some databases systems as an extension.
+- Usage:
+    - Views are generally used when data is to be accessed infrequently and data in table get updated on frequent basis.
+    - On other hand Materialized Views are used when data is to be accessed frequently and data in table not get updated on frequent basis.
