@@ -13,7 +13,7 @@
 - [12. Trapping Rain Water](array/trapping-rain-water.md)
 - 13. Check for Pythagorean Triplet in Array
 - 14. Chocolate Distribution Problem
-- 15. Stock Buy and Sell
+- [Stock Maximize](array/stock-maximize.md)
 
 ### String
 - [1. Valid Parentheses](string/valid-parentheses.md)
@@ -22,3 +22,4 @@
 - 4. Longest Palindromic Substring
 - [Generate Strong Password](string/generate-password.md)
 - [Pair of elements in an array whose sum equals a target](solutions/sum-equals-target.md)
+- [First non-repeating character](first)
