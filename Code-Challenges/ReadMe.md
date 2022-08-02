@@ -12,14 +12,14 @@
 - 11. Kth Smallest Element
 - [12. Trapping Rain Water](array/trapping-rain-water.md)
 - 13. Check for Pythagorean Triplet in Array
-- 14. Chocolate Distribution Problem
+- [14. Chocolate Distribution Problem](array/chocolate-distribution.md)
 - [Stock Maximize](array/stock-maximize.md)
 - [Pair of elements in an array whose sum equals a target](array/sum-equals-target.md)
 
 ### String
 - [1. Valid Parentheses](string/valid-parentheses.md)
 - [2. Reverse Words in String](string/reverse-words-in-string.md)
-- 3. Print All Permutations of given string
+- [3. Print All Permutations of given string](string/permuatations.md)
 - 4. Longest Palindromic Substring
 - [Generate Strong Password](string/generate-password.md)
 - [First non-repeating character](first)
