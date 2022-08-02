@@ -9,9 +9,9 @@
 - 8. Minimum Platforms
 - 9. Maximum of all Subarrays of size k
 - 10. Reverse Array in Groups of size k
-- 11. Kth Smallest Element
+- [11. Kth Smallest Element](array/kth-smallest.md)
 - [12. Trapping Rain Water](array/trapping-rain-water.md)
-- 13. Check for Pythagorean Triplet in Array
+- [13. Check for Pythagorean Triplet in Array](array/pythagorean-triplet.md)
 - [14. Chocolate Distribution Problem](array/chocolate-distribution.md)
 - [Stock Maximize](array/stock-maximize.md)
 - [Pair of elements in an array whose sum equals a target](array/sum-equals-target.md)
