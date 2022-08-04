@@ -9,7 +9,7 @@
 - [What do you mean by prototype design pattern?](#what-do-you-mean-by-prototype-design-pattern)
 - [What is the use of promises in javascript?](#what-is-the-use-of-promises-in-javascript)
 - [What is memoization?](#what-is-memoization)
-
+- [Difference between undefined and null](#difference-between-undefined-and-null)
 ### Explain Hoisting in javascript
 Hoisting is a Javascript mechanism where all the variables, function declarations and classes are moved to the top of their scope before code execution.
 JavaScript only hoists declarations, not initialisation.
@@ -70,3 +70,7 @@ Memoization is a programming technique which attempts to increase a function’s
 Computing the result with the same parameter, again and again, is not a big deal in case of the function is light-weight.
 But imagine if the function does some heavy-duty work, then, computing the result again and again with the same parameter will lead to wastage of time.
 This is where memoization comes in. By using memoization we can store(cache) the computed results based on the parameters. If the same parameter is used again while invoking the function, instead of computing the result, we directly return the stored (cached) value.
+
+### Difference between undefined and null
+- `undefined` is a variable that refers to something that doesn't exist, and the variable isn't defined to be anything.
+- `null` is a variable that is defined but is missing a value.
