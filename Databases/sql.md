@@ -10,6 +10,8 @@
 - [What is a Query?](#what-is-a-query)
 - [What is a Subquery? What are its types?](#what-is-a-subquery-what-are-its-types)
 - [What is View and Materialized View? Difference between them](#what-is-view-and-materialized-view-difference-between-them)
+- [About SQL Window Functions](#about-sql-window-functions)
+- [About SQL Window Frame](#about-sql-window-frame)
 
 ### What is a Primary Key?
 The PRIMARY KEY constraint uniquely identifies each row in a table.
@@ -89,3 +91,38 @@ Differences:
 - Usage:
     - Views are generally used when data is to be accessed infrequently and data in table get updated on frequent basis.
     - On other hand Materialized Views are used when data is to be accessed frequently and data in table not get updated on frequent basis.
+
+### About SQL Window Functions
+A window function performs a calculation across a set of table rows that are somehow related to the current row.
+- Aggregate functions produce a single result from a set of input values.
+- The Window functions execute on a set of rows and return a single value for each row from the query. 
+
+The window functions are divided into three types: value window functions, aggregation window functions, and ranking window functions:
+
+Value window functions:
+- FIRST_VALUE(): Returns the first value in an ordered set of values.
+- LAG(): Provides access to a row at a specified physical offset which comes before the current row
+- LAST_VALUE(): Returns the last value in an ordered set of values.
+- LEAD(): Provides access to a row at a specified physical offset which follows the current row.
+- NTH_VALUE(): Allows you to get a value from the Nth row in an ordered set of rows.
+
+Ranking window functions:
+- CUME_DIST(): Calculates the cumulative distribution of value within a set of values.
+- DENSE_RANK(): Assigns ranks to rows in partitions with no gaps in the ranking values.
+- NTILE(): Allows you to break the result set into a specified number of approximately equal groups, or buckets.
+- PERCENT_RANK(): Calculates the percentile ranking of rows in a result set.
+- RANK(): Assigns a rank to each row in the partition of a result set.
+- ROW_NUMBER(): Assigns a sequential integer number to each row in the query’s result set.
+
+Aggregate window functions:
+- AVG()
+- COUNT()
+- MAX()
+- MIN()
+- SUM()
+
+
+### About SQL Window Frame
+SQL window functions perform calculations based on a set of records. For example, you might want to calculate the average salary of a specific group of employee records. This group of records is called the window frame, and its definition is central to understanding how window functions work and how we can take advantage of them.
+
+The window frame is a set of rows related to the current row where the window function is used for calculation. The window frame can be a different set of rows for the next row in the query result, since it depends on the current row being processed. Every row in the result set of the query has its own window frame.
