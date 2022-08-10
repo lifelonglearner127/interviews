@@ -15,6 +15,7 @@
 - [14. Chocolate Distribution Problem](array/chocolate-distribution.md)
 - [Stock Maximize](array/stock-maximize.md)
 - [Pair of elements in an array whose sum equals a target](array/sum-equals-target.md)
+- [Intersection of two sorted arrays](array/intersection-two-sorted-arrays.md)
 
 ### String
 - [1. Valid Parentheses](string/valid-parentheses.md)
